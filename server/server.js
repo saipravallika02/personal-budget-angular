@@ -24,9 +24,21 @@ const budget = {
     ]
 };
 
+const data = [
+    {"Data": "Test1", "Value": "166443", "Year": "2014"},
+    {"Data": "Test2", "Value": "126443", "Year": "2014"},
+    {"Data": "Test3", "Value": "136443", "Year": "2014"},
+    {"Data": "Test4", "Value": "176443", "Year": "2014"},
+    {"Data": "Test5", "Value": "66443", "Year": "2014"},
+
+  ];
 
 app.get('/budget', (req, res) => {
     res.json(budget);
+});
+
+app.get('/data', (req, res) => {
+    res.json(data);
 });
 
 app.listen(port, () => {
